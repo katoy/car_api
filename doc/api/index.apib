@@ -28,7 +28,7 @@ Cars operations.
               }
             }
 
-+ Response 201 (application/json)
++ Response 201 (application/json; charset=utf-8)
 
     + Headers
 
@@ -57,7 +57,7 @@ Cars operations.
               }
             }
 
-+ Response 400 (application/json)
++ Response 400 (application/json; charset=utf-8)
 
     + Headers
 
@@ -88,8 +88,13 @@ Cars operations.
 ## Cars Collection [/api/v1/cars?{page,per_page}]
 
 + Parameters
-  + page - Current page of cars
-  + per_page - Number of cars on single page
+  + page: '1' (number, optional) - Current page of cars
+
+      + Default: '1'
+
+  + per_page: '10' (number, optional) - Number of cars on single page
+
+      + Default: '10'
 
 ### Returns all cars [GET]
 
@@ -99,7 +104,7 @@ Cars operations.
 
             Accept: application/json
 
-+ Response 200 (application/json)
++ Response 200 (application/json; charset=utf-8)
 
     + Headers
 
